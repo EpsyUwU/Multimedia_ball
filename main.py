@@ -56,6 +56,7 @@ while corriendo:
     # Dibuja el círculo en su posición actual
     if circulo_pos is not None and circulo_radio is not None:
         pygame.draw.circle(ventana, color_dibujo, circulo_pos, circulo_radio)
+        pygame.draw.circle(ventana, color_pantalla, circulo_pos, circulo_radio-0.09*circulo_radio)
 
     # Mueve el círculo a lo largo de la línea
     if linea and not dibujando:
